@@ -81,16 +81,8 @@
                   <p class="text-meta">{{ $product->size }}
                   </p>
                 </div>
-                <div class="col-sm-3">
-                  <h3 class="metaTitle">Thickness</h3>
-                  <p class="text_meta">
 
-                    @foreach(explode(',', $product->thickness) as $thickness)
-                        <li>{{ trim($thickness) }}</li>
-                    @endforeach
 
-					</p>
-                </div>
               </div>
             </div>
             <div class="pd_details_meta clearfix pdtb30">
@@ -154,20 +146,11 @@
                         <li><span>{{ $name }}</span></li>
                         <li>{{ $value }}</li>
                     @endforeach
-
-
-
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
-
-      {{-- <div class="col-lg-4 col-md-12 col-sm-12">
-        @include('partials.related', ['relatedProducts' =>  $product->showRelatedProducts($product)])
-    </div> --}}
 
 
     @include('partials.Related')
